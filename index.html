@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+	<TITLE>Chat With John Berardi, Ph.D, Rogerian Therapist</TITLE>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizabot.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" SRC="elizadata.js"></SCRIPT>
+       <link rel="stylesheet" href="https://d3nmnxhy01unu3.cloudfront.net/payment-next-app/assets/vendor-ecc31504eb08dfbe706e04ea7d7917f6.css">
+    <link rel="stylesheet" href="https://d3nmnxhy01unu3.cloudfront.net/payment-next-app/assets/payment-next-cb25dcf9f7fd8ff54660f17eda385ee5.css">
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+var eliza = new ElizaBot();
+var elizaLines = new Array();
+
+var displayCols = 60;
+var displayRows = 20;
+
+function elizaReset() {
+	eliza.reset();
+	elizaLines.length = 0;
+	elizaStep();
+}
+
+function elizaStep() {
+	var f = document.forms.e_form;
+	var userinput = f.e_input.value;
+	if (eliza.quit) {
+		f.e_input.value = '';
+		if (confirm("This session is over.\nStart over?")) elizaReset();
+		f.e_input.focus();
+		return;
+	}
+	else if (userinput != '') {
+		var usr = 'YOU:   ' + userinput;
+		var rpl ='JB: ' + eliza.transform(userinput);
+		elizaLines.push(usr);
+		elizaLines.push(rpl);
+		// display nicely
+		// (fit to textarea with last line free - reserved for extra line caused by word wrap)
+		var temp  = new Array();
+		var l = 0;
+		for (var i=elizaLines.length-1; i>=0; i--) {
+			l += 1 + Math.floor(elizaLines[i].length/displayCols);
+			if (l >= displayRows) break
+			else temp.push(elizaLines[i]);
+		}
+		elizaLines = temp.reverse();
+		f.e_display.value = elizaLines.join('\n');
+	}
+	else if (elizaLines.length == 0) {
+		// no input and no saved lines -> output initial
+		var initial = 'JB: ' + eliza.getInitial();
+		elizaLines.push(initial);
+		f.e_display.value = initial + '\n';
+	}
+	f.e_input.value = '';
+	f.e_input.focus();
+}
+
+//-->
+</SCRIPT>
+<style type="text/css">
+
+</style>
+</HEAD>
+
+<BODY TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0" STYLE="border:0" onload="window.setTimeout('elizaReset()',100)"><A NAME="top"></A>
+
+<div class="pn-canvas__section grid__item">
+  <header class="pn-header grid grid--full grid--center grid--middle">
+    <div class="grid__item fifteen-sixteenths">
+      <div class="pn-header__inner grid grid--full grid--middle grid--max-width">
+        <div class="grid__item breadcrumb-split-plus--one-half line-height--none">
+          <div class="pn-header__logo"></div>
+        </div><!--
+        --><div class="pn-header__titleHolder grid__item breadcrumb-split-plus--one-half">
+          <h2 class="pn-header__title pn-text__heading--h2">Virtual JB</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<CENTER>
+<P>&nbsp;</P>
+<img src="john-berardi-new-sidebar-headshot.jpg">
+
+<H1>Chat with JB!</H1>
+<div class="excerpt">JB has extensive training in Rogerian psychotherapy. </div>
+<div class="excerpt">You are
+lucky enough to be chatting with the fully real, totally legitimate, honest-to-goodness actual Dr John Berardi.</div>
+<p>&nbsp;</p>
+<div class="excerpt">
+ Really.
+ </div>
+<p>&nbsp;</p>
+<TABLE BORDER="0" CELLSPACING="10" CELLPADDING="0">
+<FORM NAME="e_form" onsubmit="elizaStep();return false">
+<TR><TD cellpadding="5" COLSPAN="2"><TEXTAREA NAME="e_display" COLS="60" ROWS="15"></TEXTAREA><p>&nbsp;</p></TD></TR>
+<TR VALIGN="middle">
+	<TD><INPUT TYPE="text" NAME="e_input" SIZE="50"></TD>
+	<TD ALIGN="right"><INPUT TYPE="submit" VALUE="&nbsp;Send&nbsp;"></TD>
+</TR>
+</FORM>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
