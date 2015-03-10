@@ -275,7 +275,8 @@ var elizaKeywords = [
      "Do you sometimes think I am (2)?",
      "goto what",
      "Would it matter to you?",
-     "What if I were (2)?"
+     "What if I were (2)?",
+     "Now, I'm hearing what you're saying. And I get it. But I have some concerns."
   ]],
  ["* you are *", [
      "goto you"
@@ -292,9 +293,7 @@ var elizaKeywords = [
 ["your", 0, [
  ["* your *", [
      "Why are you concerned over my (2)?",
-     "What about your own (2)?",
-     "Are you worried about someone else's (2)?",
-     "Really, my (2)?",
+     "We're in conversation with some gym chains about (2).",
      "What makes you think of my (2)?",
      "Do you want my (2)?"
   ]]
@@ -315,6 +314,8 @@ var elizaKeywords = [
   ]],
  ["* was you *", [
      "Would you like to believe I was (2)?",
+     "I'd like your take on that.",
+     "We're in conversation with some gym chains about that.",
      "What suggests that I was (2)?",
      "What do you think?",
      "Perhaps I was (2).",
@@ -324,22 +325,21 @@ var elizaKeywords = [
 ["i", 0, [
  ["* i @desire *", [
      "What would it mean to you if you got (3)?",
-     "Why do you want (3)?",
-     "Suppose you got (3) soon.",
-     "What if you never got (3)?",
-     "What would getting (3) mean to you?",
-     "What does wanting (3) have to do with this discussion?"
+     "It's helpful to visualize what needs to be done.",
+     "What's the payoff for (3)?",
+     "I hear you and appreciate that, but what does wanting (3) have to do with this discussion?"
   ]],
  ["* i am* @sad *", [
+     "I just want to get clear on things. Tell me more about being (3)",
      "I am sorry to hear that you are (3).",
-     "Do you think coming here will help you not to be (3)?",
-     "I'm sure it's not pleasant to be (3).",
+     "I'm open to all solutions. Do you think coming here will help you not to be (3)?",
      "Can you explain what made you (3)?"
   ]],
  ["* i am* @happy *", [
      "How have I helped you to be (3)?",
      "Has your treatment made you (3)?",
      "What makes you (3) just now?",
+     "Thanks for passing that along. What makes you (3)?",
      "Can you explain why you are suddenly (3)?"
   ]],
  ["* i was *", [
@@ -347,6 +347,7 @@ var elizaKeywords = [
   ]],
  ["* i @belief i *", [
      "Do you really think so?",
+     "I just want to get clear on things.",
      "But you are not sure you (3).",
      "Do you really doubt you (3)?"
   ]],
@@ -362,6 +363,7 @@ var elizaKeywords = [
   ]],
  ["* i @cannot *", [
      "How do you know that you can't (3)?",
+     "Now, I'm hearing what you're saying. And I get it. But I have some concerns.",
      "Have you tried?",
      "Perhaps you could (3) now.",
      "Do you really want to be able to (3)?",
@@ -376,6 +378,7 @@ var elizaKeywords = [
   ]],
  ["* i feel *", [
      "Tell me more about such feelings.",
+     "This feels like a low priority to me right now.",
      "Do you often feel (2)?",
      "Do you enjoy feeling (2)?",
      "Of what does feeling (2) remind you?"
@@ -399,12 +402,12 @@ var elizaKeywords = [
   ]],
  ["* you are *", [
      "What makes you think I am (2)?",
-     "Does it please you to believe I am (2)?",
-     "Do you sometimes wish you were (2)?",
+     "There's a broader context here that I'm taking into account. Does it please you to believe I am (2)?",
      "Perhaps you would like to be (2)."
   ]],
  ["* you* me *", [
      "Why do you think I (2) you?",
+     "This feels like a low priority to me right now.",
      "You like to think I (2) you -- don't you?",
      "What makes you think I (2) you?",
      "Really, I (2) you?",
@@ -422,6 +425,7 @@ var elizaKeywords = [
 ["yes", 0, [
  ["*", [
      "You seem to be quite positive.",
+     "Now, I'm hearing what you're saying. And I get it.",
      "I came here ready to be angry, but you've changed my mind.",
      "You are sure.",
      "I see.",
@@ -440,6 +444,7 @@ var elizaKeywords = [
   ]],
  ["*", [
      "Are you saying no just to be negative?",
+     "I just want to get clear on things.",
      "I'm not angry. I just want to understand.",
      "Why not?",
      "Why 'no'?"
@@ -474,6 +479,7 @@ var elizaKeywords = [
   ]],
  ["* can i *", [
      "Whether or not you can (2) depends on you more than on me.",
+     "This feels like a low priority to me right now.",
      "Do you want to be able to (2)?",
      "Perhaps you don't want to (2).",
      "goto what"
@@ -485,6 +491,7 @@ var elizaKeywords = [
      "Does that question interest you?",
      "What is it you really want to know?",
      "Are such questions much on your mind?",
+     "This feels like a low priority to me right now.",
      "What answer would please you most?",
      "What do you think?",
      "What comes to mind when you ask that?",
@@ -515,24 +522,28 @@ var elizaKeywords = [
 ["because", 0, [
  ["*", [
      "Is that the real reason?",
+     "Thanks for passing that along.",
      "Don't any other reasons come to mind?",
      "Does that reason seem to explain anything else?",
+     "We're in conversation with some gym chains about that.",
      "What other reasons might there be?"
   ]]
 ]],
 ["why", 0, [
  ["* why don't you *", [
      "Do you believe I don't (2)?",
-     "Perhaps I will (2) in good time.",
-     "Should you (2) yourself?",
+     "There's a broader context here that I'm taking into account.",
      "You want me to (2)?",
      "goto what"
   ]],
  ["* why can't i *", [
      "Do you think you should be able to (2)?",
+     "We're in conversation with some gym chains about that.",
      "Do you want to be able to (2)?",
      "Do you believe this will help you to (2)?",
      "Have you any idea why you can't (2)?",
+     "I'd like your take on that.",
+     "I'm open to all solutions.",
      "goto what"
   ]],
  ["*", [
@@ -547,6 +558,7 @@ var elizaKeywords = [
      "Who, for example?",
      "Are you thinking of a very special person?",
      "Who, may I ask?",
+     "Very useful.",
      "Someone special perhaps?",
      "You have a particular person in mind, don't you?",
      "Who do you think you're talking about?"
