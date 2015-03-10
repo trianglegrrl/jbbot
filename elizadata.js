@@ -12,6 +12,8 @@ var elizaInitials = [
 var elizaFinals = [
   "I felt like we were dialed in. It was nice talking to you!",
   // additions (not original)
+  "Thanks for listening.",
+  "No worries here.",
   "Jaw-dropping progress. This was really a nice talk.",
   "Maybe we could discuss this in our next session? Have a great day!"
 ];
@@ -106,6 +108,11 @@ var elizaKeywords = [
      "It did not bother me.  Please continue.",
      "In the end, this will dial in your results",
      "I'm not angry. I just want to understand."
+  ]]
+]],
+["apologize", 0, [
+ ["*", [
+     "goto sorry"
   ]]
 ]],
 ["apologise", 0, [
