@@ -3,10 +3,10 @@
 // [cf: Communications of the ACM, Vol. 9, #1 (January 1966): p 36-45.]
 
 var elizaInitials = [
-  "Nice to meet you! Please tell me what's on your mind.",
+  "Hey There. Please tell me what's on your mind.",
   // additions (not original)
-  "Hi, JB here! Please tell me what's been bothering you.",
-  "Hey, it's JB. Is something troubling you?"
+  "Hey There. Please tell me what's been bothering you.",
+  "Hey There. Is something troubling you?"
 ];
 
 var elizaFinals = [
@@ -100,9 +100,11 @@ var elizaKeywords = [
 ["sorry", 0, [
  ["*", [
      "Please don't apologise.",
+     "In the end, this will take your game to the next level",
      "Apologies are not necessary.",
      "I've told you that apologies are not required.",
      "It did not bother me.  Please continue.",
+     "In the end, this will dial in your results",
      "I'm not angry. I just want to understand."
   ]]
 ]],
@@ -362,7 +364,8 @@ var elizaKeywords = [
      "Don't you really (2)?",
      "Why don't you (2)?",
      "Do you wish to be able to (2)?",
-     "Does that trouble you?"
+     "Does that trouble you?",
+     "I'm kinda asking myself, 'why the hell am i doing this?' you know?"
   ]],
  ["* i feel *", [
      "Tell me more about such feelings.",
@@ -412,6 +415,7 @@ var elizaKeywords = [
 ["yes", 0, [
  ["*", [
      "You seem to be quite positive.",
+     "I came here ready to be angry, but you've changed my mind.",
      "You are sure.",
      "I see.",
      "I understand."
