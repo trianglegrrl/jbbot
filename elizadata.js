@@ -102,11 +102,9 @@ var elizaKeywords = [
 ["sorry", 0, [
  ["*", [
      "Please don't apologise.",
-     "In the end, this will take your game to the next level",
+     "Relax. In the end, this will take your game to the next level.",
      "Apologies are not necessary.",
-     "I've told you that apologies are not required.",
-     "It did not bother me.  Please continue.",
-     "In the end, this will dial in your results",
+     "In the end, this will dial in your results.",
      "I'm not angry. I just want to understand."
   ]]
 ]],
@@ -186,16 +184,14 @@ var elizaKeywords = [
      "What does that dream suggest to you?",
      "Do you dream often?",
      "What persons appear in your dreams?",
-     "Do you believe that dreams have something to do with your problem?"
+     "It's helpful to visualize what needs to be done."
   ]]
 ]],
 ["perhaps", 0, [
  ["*", [
      "You don't seem quite certain.",
      "Why the uncertain tone?",
-     "Can't you be more positive?",
-     "You aren't sure?",
-     "Don't you know?",
+     "There's a broader context here that I'm taking into account.",
      "How likely, would you estimate?"
   ]]
 ]],
@@ -242,12 +238,6 @@ var elizaKeywords = [
 ]],
 ["computer", 50, [
  ["*", [
-     "Do computers worry you?",
-     "Why do you mention computers?",
-     "What do you think machines have to do with your problem?",
-     "Don't you think computers can help people?",
-     "What about machines worries you?",
-     "What do you think about machines?",
      "You don't think I am a computer program, do you?"
   ]]
 ]],
@@ -257,6 +247,7 @@ var elizaKeywords = [
      "Would you want to be (2)?",
      "Do you wish I would tell you you are (2)?",
      "What would it mean if you were (2)?",
+     "Now, I'm hearing what you're saying. And I get it. But I have some concerns.",
      "goto what"
   ]],
  ["* i am *", [
@@ -270,8 +261,6 @@ var elizaKeywords = [
 ["are", 0, [
  ["* are you *", [
      "Why are you interested in whether I am (2) or not?",
-     "Would you prefer if I weren't (2)?",
-     "Perhaps I am (2) in your fantasies.",
      "Do you sometimes think I am (2)?",
      "goto what",
      "Would it matter to you?",
@@ -325,7 +314,7 @@ var elizaKeywords = [
 ["i", 0, [
  ["* i @desire *", [
      "What would it mean to you if you got (3)?",
-     "It's helpful to visualize what needs to be done.",
+     "It's helpful to visualize what needs to be done for (3).",
      "What's the payoff for (3)?",
      "I hear you and appreciate that, but what does wanting (3) have to do with this discussion?"
   ]],
@@ -367,6 +356,7 @@ var elizaKeywords = [
      "Have you tried?",
      "Perhaps you could (3) now.",
      "Do you really want to be able to (3)?",
+     "You're kinda asking yourself, 'why the hell am I doing this?' you know?",
      "What if you could (3)?"
   ]],
  ["* i don't *", [
@@ -374,7 +364,7 @@ var elizaKeywords = [
      "Why don't you (2)?",
      "Do you wish to be able to (2)?",
      "Does that trouble you?",
-     "I'm kinda asking myself, 'why the hell am i doing this?' you know?"
+     "You're kinda asking yourself, 'why the hell am I doing this?' you know?"
   ]],
  ["* i feel *", [
      "Tell me more about such feelings.",
@@ -402,8 +392,7 @@ var elizaKeywords = [
   ]],
  ["* you are *", [
      "What makes you think I am (2)?",
-     "There's a broader context here that I'm taking into account. Does it please you to believe I am (2)?",
-     "Perhaps you would like to be (2)."
+     "There's a broader context here that I'm taking into account. Does it please you to believe I am (2)?"
   ]],
  ["* you* me *", [
      "Why do you think I (2) you?",
@@ -424,20 +413,17 @@ var elizaKeywords = [
 ]],
 ["yes", 0, [
  ["*", [
-     "You seem to be quite positive.",
-     "Now, I'm hearing what you're saying. And I get it.",
+     "I'm hearing what you're saying. And I get it.",
      "I came here ready to be angry, but you've changed my mind.",
-     "You are sure.",
      "I see.",
-     "I understand."
+     "I understand.",
+
   ]]
 ]],
 ["no", 0, [
  ["* no one *", [
      "Are you sure, no one (2)?",
      "Surely someone (2) .",
-     "Can you think of anyone at all?",
-     "Are you thinking of a very special person?",
      "Who, may I ask?",
      "You have a particular person in mind, don't you?",
      "Who do you think you are talking about?"
